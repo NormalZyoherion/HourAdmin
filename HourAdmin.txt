@@ -421,7 +421,7 @@ G2L["UIPadding_Auto"]["PaddingBottom"] = UDim.new(0, 2)
 
 G2L["Frame_c"] = Instance.new("Frame", G2L["DarkAdmin_1"])
 G2L["Frame_c"]["BorderSizePixel"] = 0
-G2L["Frame_c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+G2L["Frame_c"]["BackgroundColor3"] = Color3.fromRGB(83, 64, 120)
 G2L["Frame_c"]["Size"] = UDim2.new(0, 40, 0, 40)
 G2L["Frame_c"]["Position"] = UDim2.new(0, 230, 0, -150)
 G2L["Frame_c"]["BackgroundTransparency"] = 0.2
@@ -437,7 +437,7 @@ G2L["TextButton_e"]["TextSize"] = 20
 G2L["TextButton_e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 G2L["TextButton_e"]["BackgroundColor3"] = Color3.fromRGB(83, 64, 120)
 G2L["TextButton_e"]["FontFace"] = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-G2L["TextButton_e"]["BackgroundTransparency"] = 0.7
+G2L["TextButton_e"]["BackgroundTransparency"] = 0.5
 G2L["TextButton_e"]["Size"] = UDim2.new(1, 0, 1, 0)
 G2L["TextButton_e"]["Text"] = "🌙"
 G2L["TextButton_e"]["Active"] = false
