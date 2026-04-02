@@ -1,6 +1,7 @@
--- DarkAdmin
+-- HourAdmin
 -- over 154 Commands rn with usefull
--- Made by Pilipino Dev Love <3
+-- Made by X1k0 Love <3
+-- no dont skid
 
 repeat task.wait() until game:IsLoaded()
 local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMinisterq/Notification-Library/Main/Library.lua"))()
@@ -324,15 +325,16 @@ G2L["DarkAdmin_1"]["ResetOnSpawn"] = false
 
 CollectionService:AddTag(G2L["DarkAdmin_1"], "main")
 
-G2L["CommandFrame_2"] = Instance.new("Frame", G2L["DarkAdmin_1"])
+G2L["CommandFrame_2"] = Instance.new("Frame", G2L["HourAdmin_1"])
 G2L["CommandFrame_2"]["BorderSizePixel"] = 0
-G2L["CommandFrame_2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+G2L["CommandFrame_2"]["BackgroundColor3"] = Color3.fromRGB(46, 0, 79)
 G2L["CommandFrame_2"]["Size"] = UDim2.new(0, 0, 0, 40)
 G2L["CommandFrame_2"]["Position"] = UDim2.new(0, 230, 0, -46)
 G2L["CommandFrame_2"]["Name"] = "CommandFrame"
 G2L["CommandFrame_2"]["BackgroundTransparency"] = 0.1
 G2L["CommandFrame_2"]["Visible"] = false
 G2L["CommandFrame_2"]["ClipsDescendants"] = false
+
 
 G2L["UICorner_3"] = Instance.new("UICorner", G2L["CommandFrame_2"])
 G2L["UICorner_3"]["CornerRadius"] = UDim.new(0, 20)
@@ -439,7 +441,7 @@ G2L["TextButton_e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 G2L["TextButton_e"]["FontFace"] = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
 G2L["TextButton_e"]["BackgroundTransparency"] = 1
 G2L["TextButton_e"]["Size"] = UDim2.new(1, 0, 1, 0)
-G2L["TextButton_e"]["Text"] = "DA"
+G2L["TextButton_e"]["Text"] = "🌙"
 G2L["TextButton_e"]["Active"] = false
 
 G2L["UICorner_f"] = Instance.new("UICorner", G2L["TextButton_e"])
@@ -869,12 +871,12 @@ function PlayIntro()
 	fadePlaceholder:Play()
 	fadePlaceholder.Completed:Wait()
 	
-	G2L["TextBox_7"].PlaceholderText = "Command Bar :"
+	G2L["TextBox_7"].PlaceholderText = "Enter Your Command Here..."
 	
 	local fadeInPlaceholder = TweenService:Create(
 		G2L["TextBox_7"],
 		TweenInfo.new(0.5, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut),
-		{PlaceholderColor3 = Color3.fromRGB(156, 156, 156)}
+		{PlaceholderColor3 = Color3.fromRGB(120, 70, 190)}
 	)
 	
 	fadeInPlaceholder:Play()
@@ -890,7 +892,7 @@ function PlayIntro()
 	end)
 	
 	task.wait(0.2)
-	NotificationLibrary:SendNotification("Success", "DarkAdmin has Loaded...", 3)
+	NotificationLibrary:SendNotification("Success", "HourAdmin Loaded...", 3)
 	task.wait(0.2)
 	NotificationLibrary:SendNotification("Info", "Execute your First Command. Help / Info / To see all Commands", 3.2)
 end
