@@ -39,7 +39,7 @@ corner.Parent = frame
 -- Close button (X)
 local closeBtn = Instance.new("TextButton")
 closeBtn.Name = "CloseButton"
-closeBtn.Text = "X"
+closeBtn.Text = "×"
 closeBtn.TextColor3 = TextColor
 closeBtn.BackgroundColor3 = ButtonColor
 closeBtn.Size = UDim2.new(0, 30, 0, 30)
