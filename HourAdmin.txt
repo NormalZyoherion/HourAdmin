@@ -3,7 +3,7 @@
 -- Made by Pilipino Dev Love <3
 
 repeat task.wait() until game:IsLoaded()
-local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMinisterq/Notification-Library/Main/Library.lua"))()
+local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/yeahblxr/98765678909/refs/heads/main/Notifications.lua"))()
 
 Service = setmetatable({}, {
     __index = function(self, name)
@@ -366,7 +366,7 @@ G2L["TextBox_7"]["TextSize"] = 20
 G2L["TextBox_7"]["TextColor3"] = Color3.fromRGB(211, 211, 211)
 G2L["TextBox_7"]["BackgroundColor3"] = Color3.fromRGB(142, 142, 142)
 G2L["TextBox_7"]["FontFace"] = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-G2L["TextBox_7"]["PlaceholderText"] = "Command Bar :"
+G2L["TextBox_7"]["PlaceholderText"] = "Enter Your Command Here..."
 G2L["TextBox_7"]["Size"] = UDim2.new(0, 190, 0, 28)
 G2L["TextBox_7"]["Text"] = ""
 G2L["TextBox_7"]["BackgroundTransparency"] = 1
@@ -437,9 +437,9 @@ G2L["TextButton_e"]["TextSize"] = 20
 G2L["TextButton_e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 G2L["TextButton_e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 G2L["TextButton_e"]["FontFace"] = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-G2L["TextButton_e"]["BackgroundTransparency"] = 1
+G2L["TextButton_e"]["BackgroundTransparency"] = 0.8
 G2L["TextButton_e"]["Size"] = UDim2.new(1, 0, 1, 0)
-G2L["TextButton_e"]["Text"] = "DA"
+G2L["TextButton_e"]["Text"] = "🌙"
 G2L["TextButton_e"]["Active"] = false
 
 G2L["UICorner_f"] = Instance.new("UICorner", G2L["TextButton_e"])
@@ -869,7 +869,7 @@ function PlayIntro()
 	fadePlaceholder:Play()
 	fadePlaceholder.Completed:Wait()
 	
-	G2L["TextBox_7"].PlaceholderText = "Command Bar :"
+	G2L["TextBox_7"].PlaceholderText = "Enter Your Command Here..."
 	
 	local fadeInPlaceholder = TweenService:Create(
 		G2L["TextBox_7"],
@@ -890,7 +890,7 @@ function PlayIntro()
 	end)
 	
 	task.wait(0.2)
-	NotificationLibrary:SendNotification("Success", "DarkAdmin has Loaded...", 3)
+	NotificationLibrary:CreateNotification("Success", "HourAdmin Loaded...", 3)
 	task.wait(0.2)
 	NotificationLibrary:SendNotification("Info", "Execute your First Command. Help / Info / To see all Commands", 3.2)
 end
