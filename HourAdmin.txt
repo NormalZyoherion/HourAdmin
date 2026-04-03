@@ -481,7 +481,7 @@ function createCommandLabel(text, index)
 	label.BorderSizePixel = 0
 	label.TextSize = 20
 	label.TextXAlignment = Enum.TextXAlignment.Left
-	label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	label.BackgroundColor3 = Color3.fromRGB(83, 64, 120)
 	label.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
 	label.TextColor3 = Color3.fromRGB(255, 255, 255)
 	label.BackgroundTransparency = 1
@@ -1533,8 +1533,8 @@ CommandSystem:AddCmd({
 })
 
 CommandSystem:AddCmd({
-	Title = "Help / info",
-	Alias = {"Help", "Info"},
+	Title = "Help / info / cmds / cmd",
+	Alias = {"Help", "Info", "cmds", "cmd"},
 	Callback = function()
 	    loadstring(game:HttpGet("https://pastefy.app/uxFbjTe3/raw"))()
 	end
