@@ -1536,7 +1536,7 @@ CommandSystem:AddCmd({
 	Title = "Help / info / cmds / cmd",
 	Alias = {"Help", "Info", "cmds", "cmd"},
 	Callback = function()
-	    loadstring(game:HttpGet("https://pastefy.app/uxFbjTe3/raw"))()
+	    loadstring(game:HttpGet("https://pastefy.app/VH6rD6YX/raw"))()
 	end
 })
 
@@ -2191,8 +2191,8 @@ CommandSystem:AddCmd({
 })
 
 CommandSystem:AddCmd({
-	Title = "HideDA / HideUi",
-	Alias = {"HideDA", "HideUi"},
+	Title = "Hide / Hide",
+	Alias = {"Hide", "Hide"},
 	Callback = function()
 		Settings.isCommandFrameOpen = false
 		Settings.hideTimerActive = false
@@ -2252,8 +2252,8 @@ CommandSystem:AddCmd({
 })
 
 CommandSystem:AddCmd({
-	Title = "UnHideDA / UnHideUi",
-	Alias = {"UnHideDA", "UnHideUi"},
+	Title = "UnHidegui / UnHideUi",
+	Alias = {"UnHidegui", "UnHideUi"},
 	Callback = function()
 		G2L["Frame_c"].Visible = true
 		G2L["CommandFrame_2"].Visible = true
